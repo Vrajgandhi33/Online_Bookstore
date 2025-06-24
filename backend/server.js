@@ -27,8 +27,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://online-bookstore-liard.vercel.app", "http://localhost:3000"],
-    credentials: true,
+    origin: "*",
   })
 );
 
